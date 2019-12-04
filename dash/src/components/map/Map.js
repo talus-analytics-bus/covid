@@ -98,7 +98,7 @@ const Map = ({
     // Color scheme binary from white to red marking whether any increase in
     // measles caseload since the previous month was significant (greater than
     // or equal to a threshold percentage change value) or not.
-    const thresh = 0.8
+    const thresh = 0.3
     const bubbleTrendThreshold = [
       'case',
       ['==', ['feature-state', 'value3'], null],
@@ -150,7 +150,7 @@ const Map = ({
       ]
     ]
 
-    const bubbleTrend = bubbleTrendStops
+    const bubbleTrend = bubbleTrendThreshold
 
     const bubbleRed = [
       'case',

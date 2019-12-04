@@ -604,8 +604,8 @@ Util.globalMaxDate = () => {
 
 Util.today = () => {
   const today = new Date()
-  // today.setDate(30);
-  // today.setMonth(9);
+  // today.setDate(1)
+  // today.setMonth(0)
   return today // TODO put time traveling here if needed
 }
 
